@@ -32,7 +32,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <sys/ioctl.h>
-#include <sys/poll.h>
+#include <poll.h>
 #include <sys/socket.h>
 #include <sys/time.h>
 #include <sys/un.h>
@@ -176,10 +176,10 @@ struct ip6_ext {
 
 /* following lines are copy from unistd.h in Linux for avoidance warnings in compilation */
 #if defined(HAVE_SETRESGID) && !defined(_GNU_SOURCE)
-extern int setresgid (__uid_t __ruid, __uid_t __euid, __uid_t __suid);
+extern int setresgid (uid_t __ruid, uid_t __euid, uid_t __suid);
 #endif
 #if defined(HAVE_SETRESUID) && !defined(_GNU_SOURCE)
-extern int setresuid (__uid_t __ruid, __uid_t __euid, __uid_t __suid);
+extern int setresuid (uid_t __ruid, uid_t __euid, uid_t __suid);
 #endif
 
 #endif /* _SFD_COMMON_H */
