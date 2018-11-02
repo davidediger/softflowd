@@ -28,7 +28,7 @@
 #include "treetype.h"
 #include "softflowd.h"
 
-#if defined (HAVE_DECL_HTONLL) && !defined (HAVE_DECL_HTOBE64)
+#if HAVE_DECL_HTONLL && !HAVE_DECL_HTOBE64
 #define htobe64 htonll
 #endif
 #define JAN_1970        2208988800UL /* 1970 - 1900 in seconds */
