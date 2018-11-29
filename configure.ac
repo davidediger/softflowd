@@ -17,6 +17,7 @@ AC_CONFIG_SRCDIR([softflowd.c])
 
 AC_CONFIG_HEADER(config.h)
 AC_PROG_CC
+AC_PROG_CC_STDC
 AC_PROG_INSTALL
 
 # Optional verbose warnings for gcc, see below
